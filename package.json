@@ -1,0 +1,15 @@
+{
+  "name": "interfaz-cine",
+  "version": "1.0.0",
+  "description": "Práctica de recuperación de Diseño de Interfaces Web, 1º trimestre.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
