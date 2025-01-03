@@ -3,13 +3,22 @@
 
  ## Flujo de trabajo:
   ### 1. Wireframing y prototipado (en papel)
-  ### 2. Preparación de todo el ecosistema de desarrollo
+  ### 2. Preparación de todo el ecosistema de desarrollo [Documentación](https://getbootstrap.esdocu.com/docs/5.3/getting-started/vite/)
    - Crear el repositorio
    - Instalar Bootstrap
     1. Inicializar el proyecto creando el package.json con: `npm init -y`
-    2. Instalar Bootstrap con npm: `npm install bootstrap@5.3.3`
-   - Instalar SASS
-    Instalación con npm: `npm install -g sass`
+    2. Instalar Vite: `npm i --save-dev vite`
+    3. Instalar Bootstrap y Popper: `npm i --save bootstrap @popperjs/core`
+   - Instalar SASS: `npm i --save-dev sass`
+   - Estructurar el proyecto:
+    1. Crear el directorio src con sus subdirectorios js y scss
+    2. Crear src/index.html, src/js/main.js, src/scss/styles.scss y vite.config.js
+    3. Configurar Vite
+    4. Crear el script npm para ejecutar Vite e iniciar Vite con `npm start`
+    5. Comprobar que Vite se carga desde index.html
+    6. Importar Bootstrap en styles.scss
+    7. Importar el JavaScript de Bootstrap
+    8. Comprobar que todo funciona correctamente
   ### 3. Diseño de las 5 páginas
    - (TODO) Página principal - HTML
    - (TODO) Página principal - CSS
