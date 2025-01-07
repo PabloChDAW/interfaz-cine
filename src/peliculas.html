@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <!-- Barra de navegación. Docs: https://getbootstrap.esdocu.com/docs/5.3/components/navbar/ -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="img/camara.jpg" alt="Cámara de cine" class="">
+          <strong class="h1 mx-5">Cine Los Califas</strong>
+        </a>
+
+        <!-- Menú de hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item h4 mx-4">
+              <!-- Enlace a todas las películas -->
+              <a class="nav-link active" aria-current="page" href="#">Películas</a>
+            </li>
+
+            <!-- Enlace a texto promocional -->
+            <li class="nav-item h4 mx-4">
+              <a class="nav-link" href="#">Lo mejor del Cine</a>
+            </li>
+
+            <!-- Dropdown de géneros -->
+            <li class="nav-item dropdown h4 mx-4">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Buscar por género
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Acción</a></li>
+                <li><a class="dropdown-item" href="#">Aventura</a></li>
+                <li><a class="dropdown-item" href="#">Ciencia ficción</a></li>
+                <li><a class="dropdown-item" href="#">Comedia</a></li>
+                <li><a class="dropdown-item" href="#">Drama</a></li>
+                <li><a class="dropdown-item" href="#">Suspense</a></li>
+                <li><a class="dropdown-item" href="#">Terror</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Ver últimos estrenos</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Formulario de búsqueda -->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar película" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Películas. Se muestran usando tarjetas con flexbox. -->
+    <h1 class="text-center m-5">Películas en cartelera</h1>
+    <!-- Aplico flexbox con d-flex. Las tarjetas que no caben pasan a la siguiente fila. -->
+    <section class="d-flex align-content-start flex-wrap">
+      <article class="card m-5 h5" style="width: 24rem;">
+        <img src="img/cartel-quien-es-quien.jpg" class="card-img-top" alt="¿QUIÉN ES QUIÉN?">
+        <div class="card-body">
+          <h4 class="card-title">¿QUIÉN ES QUIÉN?</h4>
+          <p class="card-text"><strong>Sinopsis: </strong>Los Fuentes no son la familia mejor avenida del mundo. El trabajo, el colegio y la rutina les ha sumido en una espiral de desconexión que parece imposible de detener.</p>
+          <a href="pelicula.html" class="btn btn-primary">Ir a la película</a>
+        </div>
+      </article>
+
+      <article class="card m-5 h5" style="width: 24rem;">
+        <img src="img/cartel-absolucion.jpg" class="card-img-top" alt="ABSOLUCIÓN">
+        <div class="card-body">
+          <h4 class="card-title">ABSOLUCIÓN</h4>
+          <p class="card-text"><strong>Sinopsis: </strong>Un curtido y peligroso gangster (Liam Neeson) descubre que está empezando a perder la memoria. Decidido a enmendar las cosas con su hija y rectificar los errores del pasado.</p>
+          <a href="pelicula.html" class="btn btn-primary">Ir a la película</a>
+        </div>
+      </article>
+
+      <article class="card m-5 h5" style="width: 24rem;">
+        <img src="img/cartel-better-man.jpg" class="card-img-top" alt="BETTER MAN">
+        <div class="card-body">
+          <h4 class="card-title">BETTER MAN</h4>
+          <p class="card-text"><strong>Sinopsis: </strong>La historia de Robbie Williams, uno de los mejores artistas del mundo, las experiencias que lo convirtieron en quien es y los demonios con los que luchó tanto dentro como fuera del infierno.</p>
+          <a href="pelicula.html" class="btn btn-primary">Ir a la película</a>
+        </div>
+      </article>
+
+      <article class="card m-5 h5" style="width: 24rem;">
+        <img src="img/cartel-conclave.jpg" class="card-img-top" alt="CÓNCLAVE">
+        <div class="card-body">
+          <h4 class="card-title">CÓNCLAVE</h4>
+          <p class="card-text"><strong>Sinopsis: </strong>Tras la inesperada muerte del Sumo Pontífice, el cardenal Lawrence es designado como responsable para liderar uno de los rituales más secretos y antiguos del mundo: la elección de su sucesor.</p>
+          <a href="pelicula.html" class="btn btn-primary">Ir a la película</a>
+        </div>
+      </article>
+
+      <article class="card m-5 h5" style="width: 24rem;">
+        <img src="img/cartel-gladiator-2.jpg" class="card-img-top" alt="GLADIATOR II">
+        <div class="card-body">
+          <h4 class="card-title">GLADIATOR II</h4>
+          <p class="card-text"><strong>Sinopsis: </strong>Años después de presenciar la muerte del admirado héroe Máximo a manos de su tío, Lucio (Paul Mescal) se ve forzado a entrar en el Coliseo tras ser testigo de la conquista de su hogar.</p>
+          <a href="pelicula.html" class="btn btn-primary">Ir a la película</a>
+        </div>
+      </article>
+
+      <article class="card m-5 h5" style="width: 24rem;">
+        <img src="img/cartel-hereje.jpg" class="card-img-top" alt="HERETIC (HEREJE)">
+        <div class="card-body">
+          <h4 class="card-title">HERETIC (HEREJE)</h4>
+          <p class="card-text"><strong>Sinopsis: </strong>Dos jóvenes misioneras se ven obligadas a demostrar su fe cuando llaman a la puerta equivocada y son recibidas por el diabólico Sr. Reed (Hugh Grant). Los tres se verán envueltos en problemas.</p>
+          <a href="pelicula.html" class="btn btn-primary">Ir a la película</a>
+        </div>
+      </article>
+
+      <article class="card m-5 h5" style="width: 24rem;">
+        <img src="img/cartel-kraven.jpg" class="card-img-top" alt="KRAVEN THE HUNTER">
+        <div class="card-body">
+          <h4 class="card-title">KRAVEN THE HUNTER</h4>
+          <p class="card-text"><strong>Sinopsis: </strong>El inmigrante ruso Sergei Kravinoff está en una misión para demostrar que es el mejor cazador del mundo.</p>
+          <a href="pelicula.html" class="btn btn-primary">Ir a la película</a>
+        </div>
+      </article>
+
+      <article class="card m-5 h5" style="width: 24rem;">
+        <img src="img/cartel-mufasa.jpg" class="card-img-top" alt="MUFASA: EL REY LEÓN">
+        <div class="card-body">
+          <h4 class="card-title">MUFASA: EL REY LEÓN</h4>
+          <p class="card-text"><strong>Sinopsis: </strong>Precuela de 'El rey león' (2019). Rafiki debe transmitir la leyenda de Mufasa a la joven cachorro de león Kiara, hija de Simba y Nala, con Timón y Pumba aportando su estilo característico.</p>
+          <a href="pelicula.html" class="btn btn-primary">Ir a la película</a>
+        </div>
+      </article>
+
+      <article class="card m-5 h5" style="width: 24rem;">
+        <img src="img/cartel-oh-canada.jpg" class="card-img-top" alt="OH, CANADA">
+        <div class="card-body">
+          <h4 class="card-title">OH, CANADA</h4>
+          <p class="card-text"><strong>Sinopsis: </strong>Un afamado documentalista canadiense concede una última entrevista a uno de sus antiguos alumnos para contarle toda la verdad sobre su vida. Una confesión filmada delante de su mujer.</p>
+          <a href="pelicula.html" class="btn btn-primary">Ir a la película</a>
+        </div>
+      </article>
+
+      <article class="card m-5 h5" style="width: 24rem;">
+        <img src="img/cartel-parthenope.jpg" class="card-img-top" alt="PARTHENOPE">
+        <div class="card-body">
+          <h4 class="card-title">PARTHENOPE</h4>
+          <p class="card-text"><strong>Sinopsis: </strong>El largo viaje de la vida de Parthenope, desde su nacimiento en 1950 hasta hoy. Una epopeya femenina desprovista de heroísmo pero rebosante de una pasión inexorable por la libertad.</p>
+          <a href="pelicula.html" class="btn btn-primary">Ir a la película</a>
+        </div>
+      </article>
+
+      <article class="card m-5 h5" style="width: 24rem;">
+        <img src="img/cartel-sin-instrucciones.jpg" class="card-img-top" alt="SIN INSTRUCCIONES">
+        <div class="card-body">
+          <h4 class="card-title">SIN INSTRUCCIONES</h4>
+          <p class="card-text"><strong>Sinopsis: </strong>Leo (Paco León) es un tipo soltero y mujeriego que vive al día en una pequeñísima población de playa en una isla Canaria. Su placentera existencia se ve trastornada cuando llega de su viaje.</p>
+          <a href="pelicula.html" class="btn btn-primary">Ir a la película</a>
+        </div>
+      </article>
+
+      <article class="card m-5 h5" style="width: 24rem;">
+        <img src="img/cartel-sonic.jpg" class="card-img-top" alt="SONIC 3: LA PELÍCULA">
+        <div class="card-body">
+          <h4 class="card-title">SONIC 3: LA PELÍCULA</h4>
+          <p class="card-text"><strong>Sinopsis: </strong>Sonic, Tails y Knuckles se enfrentarán al Dr. Eggman antes de que conquiste el mundo. Eggman tendrá un nuevo aliado (Project Shadow).</p>
+          <a href="pelicula.html" class="btn btn-primary">Ir a la película</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h3>Enlaces</h3>
+            <ul>
+              <li><a href="#">Películas</a></li>
+              <li><a href="#">Lo mejor del Cine</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h3>Contacto</h3>
+            <p>Correo electrónico: contacto@cineloscalifas.com</p>
+            <p>Dirección: C/Goya s/n. Teléfono: 957112233</p>
+          </div>
+
+          <div class="col-lg-4">
+            <h3>Cine Los Califas S.L</h3>
+            <p>(c) 2023 Cine Los Califas. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -31,8 +31,11 @@
   ### 7. (TODO) Preparar presentación
 
 Enlaces importantes:
+[Instalación de Bootstrap](https://getbootstrap.esdocu.com/docs/5.3/getting-started/)
 [Componentes con Bootstrap](https://getbootstrap.esdocu.com/docs/5.3/components/)
 [Tipografía con Bootstrap](https://getbootstrap.esdocu.com/docs/5.1/content/typography/)
 [Espaciado con Bootstrap](https://getbootstrap.com/docs/4.0/utilities/spacing/)
 [Ejemplos con Bootstrap](https://getbootstrap.esdocu.com/docs/5.3/examples/)
 [Navbar con Bootstrap](https://getbootstrap.esdocu.com/docs/5.3/components/navbar/)
+[Control de texto con Bootstrap](https://getbootstrap.esdocu.com/docs/5.1/utilities/text/)
+[Uso de flex con Bootstrap](https://getbootstrap.com/docs/5.0/utilities/flex/)
