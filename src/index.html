@@ -7,10 +7,98 @@
     <title>Bootstrap w/ Vite</title>
     <script type="module" src="./js/main.js"></script>
   </head>
+
   <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
+    <!-- Barra de navegación. Docs: https://getbootstrap.esdocu.com/docs/5.3/components/navbar/ -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="img/camara.jpg" alt="Cámara de cine" class="">
+          <strong class="h1 mx-5">Cine Los Califas</strong>
+        </a>
+
+        <!-- Menú de hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item h4 mx-4">
+              <!-- Enlace a todas las películas -->
+              <a class="nav-link active" aria-current="page" href="#">Películas</a>
+            </li>
+
+            <!-- Enlace a texto promocional -->
+            <li class="nav-item h4 mx-4">
+              <a class="nav-link" href="#">Lo mejor del Cine</a>
+            </li>
+
+            <!-- Dropdown de géneros -->
+            <li class="nav-item dropdown h4 mx-4">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Buscar por género
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Acción</a></li>
+                <li><a class="dropdown-item" href="#">Aventura</a></li>
+                <li><a class="dropdown-item" href="#">Ciencia ficción</a></li>
+                <li><a class="dropdown-item" href="#">Comedia</a></li>
+                <li><a class="dropdown-item" href="#">Drama</a></li>
+                <li><a class="dropdown-item" href="#">Suspense</a></li>
+                <li><a class="dropdown-item" href="#">Terror</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Ver últimos estrenos</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Formulario de búsqueda -->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar película" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carrusel Slide de movimiento automático. Se para al posar el ratón. bg-dark cambia el color de fondo. -->
+    <div id="carouselExampleAutoplaying" class="carousel slide bg-dark" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- mx-auto centra cada cartel. w-90 limita el ancho. img-fluid muestra la imagen fluid en pantallas pequeñas. -->
+          <img src="img/cartel-quien-es-quien.jpg" class="d-block w-90 mx-auto img-fluid" alt="¿QUIÉN ES QUIÉN?">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/cartel-absolucion.jpg" class="d-block w-90 mx-auto img-fluid" alt="ABSOLUCIÓN">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/cartel-better-man.jpg" class="d-block w-90 mx-auto img-fluid" alt="BETTER MAN">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/cartel-conclave.jpg" class="d-block w-90 mx-auto img-fluid" alt="CÓNCLAVE">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/cartel-gladiator-2.jpg" class="d-block w-90 mx-auto img-fluid" alt="GLADIATOR II">
+        </div>
+      </div>
+
+      <!-- Botones del carrusel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </body>
 </html>

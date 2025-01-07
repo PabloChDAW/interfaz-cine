@@ -29,3 +29,10 @@
   ### 5. (TODO) Subir web a Netlify
   ### 6. (TODO) Crear el PDF
   ### 7. (TODO) Preparar presentación
+
+Enlaces importantes:
+[Tipografía con Bootstrap](https://getbootstrap.esdocu.com/docs/5.1/content/typography/)
+[Espaciado con Bootstrap](https://getbootstrap.com/docs/4.0/utilities/spacing/)
+[Ejemplos con Bootstrap](https://getbootstrap.esdocu.com/docs/5.3/examples/)
+[Navbar con Bootstrap](https://getbootstrap.esdocu.com/docs/5.3/components/navbar/)
+
