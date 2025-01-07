@@ -20,7 +20,7 @@
     #### 7. Importar el JavaScript de Bootstrap
     #### 8. Comprobar que todo funciona correctamente
   ### 3. Diseño de las 5 páginas
-   - (TODO) Página principal
+   - Página principal
    - (TODO) Página películas
    - (TODO) Página película
    - (TODO) Página selección de asientos
@@ -31,8 +31,8 @@
   ### 7. (TODO) Preparar presentación
 
 Enlaces importantes:
+[Componentes con Bootstrap](https://getbootstrap.esdocu.com/docs/5.3/components/)
 [Tipografía con Bootstrap](https://getbootstrap.esdocu.com/docs/5.1/content/typography/)
 [Espaciado con Bootstrap](https://getbootstrap.com/docs/4.0/utilities/spacing/)
 [Ejemplos con Bootstrap](https://getbootstrap.esdocu.com/docs/5.3/examples/)
 [Navbar con Bootstrap](https://getbootstrap.esdocu.com/docs/5.3/components/navbar/)
-
