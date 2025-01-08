@@ -12,7 +12,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <!-- Logo -->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="img/camara.jpg" alt="Cámara de cine" class="">
           <strong class="h1 mx-5">Cine Los Califas</strong>
         </a>
@@ -31,7 +31,7 @@
 
             <!-- Enlace a texto promocional -->
             <li class="nav-item h4 mx-4">
-              <a class="nav-link" href="#">Lo mejor del Cine</a>
+              <a class="nav-link" href="index.html#promo">Lo mejor del Cine</a>
             </li>
 
             <!-- Dropdown de géneros -->
@@ -41,15 +41,15 @@
               </a>
 
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Acción</a></li>
-                <li><a class="dropdown-item" href="#">Aventura</a></li>
-                <li><a class="dropdown-item" href="#">Ciencia ficción</a></li>
-                <li><a class="dropdown-item" href="#">Comedia</a></li>
-                <li><a class="dropdown-item" href="#">Drama</a></li>
-                <li><a class="dropdown-item" href="#">Suspense</a></li>
-                <li><a class="dropdown-item" href="#">Terror</a></li>
+                <li><a class="dropdown-item" href="peliculas.html">Acción</a></li>
+                <li><a class="dropdown-item" href="peliculas.html">Aventura</a></li>
+                <li><a class="dropdown-item" href="peliculas.html">Ciencia ficción</a></li>
+                <li><a class="dropdown-item" href="peliculas.html">Comedia</a></li>
+                <li><a class="dropdown-item" href="peliculas.html">Drama</a></li>
+                <li><a class="dropdown-item" href="peliculas.html">Suspense</a></li>
+                <li><a class="dropdown-item" href="peliculas.html">Terror</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Ver últimos estrenos</a></li>
+                <li><a class="dropdown-item" href="peliculas.html">Ver últimos estrenos</a></li>
               </ul>
             </li>
           </ul>
@@ -67,32 +67,32 @@
     <div id="carouselExampleAutoplaying" class="carousel slide bg-dark" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <a href="#">
+          <a href="pelicula.html">
             <!-- mx-auto centra cada cartel. w-90 limita el ancho. img-fluid muestra la imagen fluid en pantallas pequeñas. -->
             <img src="img/cartel-quien-es-quien.jpg" class="d-block w-90 mx-auto img-fluid" alt="¿QUIÉN ES QUIÉN?">
           </a>
         </div>
 
         <div class="carousel-item">
-          <a href="#">
+          <a href="pelicula.html">
             <img src="img/cartel-absolucion.jpg" class="d-block w-90 mx-auto img-fluid" alt="ABSOLUCIÓN">
           </a>
         </div>
 
         <div class="carousel-item">
-          <a href="#">
+          <a href="pelicula.html">
             <img src="img/cartel-better-man.jpg" class="d-block w-90 mx-auto img-fluid" alt="BETTER MAN">
           </a>
         </div>
 
         <div class="carousel-item">
-          <a href="#">
+          <a href="pelicula.html">
             <img src="img/cartel-conclave.jpg" class="d-block w-90 mx-auto img-fluid" alt="CÓNCLAVE">
           </a>
         </div>
 
         <div class="carousel-item">
-          <a href="#">
+          <a href="pelicula.html">
             <img src="img/cartel-gladiator-2.jpg" class="d-block w-90 mx-auto img-fluid" alt="GLADIATOR II">
           </a>
         </div>
@@ -112,7 +112,7 @@
 
     <!-- Acordeón con las ventajas del cine -->
     <h1 class="p-3 mb-2 mt-5 mx-5">3 beneficios de ir al cine:</h1>
-    <div class="accordion h5 mx-5" id="accordionExample">
+    <div id="promo" class="accordion h5 mx-5" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -160,12 +160,13 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-        <div class="row">
+        <div class="row mt-5">
           <div class="col-lg-4">
             <h3>Enlaces</h3>
             <ul>
-              <li><a href="#">Películas</a></li>
-              <li><a href="#">Lo mejor del Cine</a></li>
+              <li><a href="peliculas.html">Películas</a></li>
+              <!-- Usando el id del elemento, accede a su altura en la página -->
+              <li><a href="index.html#promo">Lo mejor del Cine</a></li>
             </ul>
           </div>
 

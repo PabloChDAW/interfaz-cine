@@ -21,7 +21,7 @@
     #### 8. Comprobar que todo funciona correctamente
   ### 3. Diseño de las 5 páginas
    - Página principal
-   - (TODO) Página películas
+   - Página películas
    - (TODO) Página película
    - (TODO) Página selección de asientos
    - (TODO) Página pago
