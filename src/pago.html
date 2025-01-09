@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <!-- Barra de navegación. Docs: https://getbootstrap.esdocu.com/docs/5.3/components/navbar/ -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="img/camara.jpg" alt="Cámara de cine" class="">
+          <strong class="h1 mx-5">Cine Los Califas</strong>
+        </a>
+
+        <!-- Menú de hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item h5 mx-4">
+              <!-- Enlace a todas las películas -->
+              <a class="nav-link active" aria-current="page" href="peliculas.html">Películas</a>
+            </li>
+
+            <!-- Enlace a texto promocional -->
+            <li class="nav-item h5 mx-4">
+              <a class="nav-link" href="index.html#promo">Lo mejor del Cine</a>
+            </li>
+
+            <!-- Dropdown de géneros -->
+            <li class="nav-item dropdown h5 mx-4">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Buscar por género
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="peliculas.html">Acción</a></li>
+                <li><a class="dropdown-item" href="peliculas.html">Aventura</a></li>
+                <li><a class="dropdown-item" href="peliculas.html">Ciencia ficción</a></li>
+                <li><a class="dropdown-item" href="peliculas.html">Comedia</a></li>
+                <li><a class="dropdown-item" href="peliculas.html">Drama</a></li>
+                <li><a class="dropdown-item" href="peliculas.html">Suspense</a></li>
+                <li><a class="dropdown-item" href="peliculas.html">Terror</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="peliculas.html">Ver últimos estrenos</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Formulario de búsqueda -->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar película" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-lg-4">
+            <h4>Enlaces</h4>
+            <ul>
+              <li><a href="peliculas.html">Películas</a></li>
+              <!-- Usando el id del elemento, accede a su altura en la página -->
+              <li><a href="index.html#promo">Lo mejor del Cine</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h4>Contacto</h4>
+            <p>Correo electrónico: contacto@cineloscalifas.com</p>
+            <p>Dirección: C/Goya s/n. Teléfono: 957112233</p>
+          </div>
+
+          <div class="col-lg-4">
+            <h4>Cine Los Califas S.L</h4>
+            <p>(c) 2023 Cine Los Califas. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

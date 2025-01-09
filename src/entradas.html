@@ -24,18 +24,18 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item h4 mx-4">
+            <li class="nav-item h5 mx-4">
               <!-- Enlace a todas las películas -->
               <a class="nav-link active" aria-current="page" href="peliculas.html">Películas</a>
             </li>
 
             <!-- Enlace a texto promocional -->
-            <li class="nav-item h4 mx-4">
+            <li class="nav-item h5 mx-4">
               <a class="nav-link" href="index.html#promo">Lo mejor del Cine</a>
             </li>
 
             <!-- Dropdown de géneros -->
-            <li class="nav-item dropdown h4 mx-4">
+            <li class="nav-item dropdown h5 mx-4">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Buscar por género
               </a>
@@ -63,14 +63,213 @@
       </div>
     </nav>
 
+    <!-- Selección de asiento y horario -->
+    <div class="container m-4">
+      <h2>Seleccione el horario</h2>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Horarios disponibles</option>
+        <option value="1">16:00</option>
+        <option value="2">19:00</option>
+        <option value="3">22:00</option>
+      </select>
+    </div>
     
+    <div class="container m-4">
+      <h2>Selección de asiento</h2>
+      <button type="button" class="btn btn-outline-success" disabled>Libre</button>
+      <button type="button" class="btn btn-outline-danger" disabled>Ocupado</button>
+    </div>
+    
+    <!-- overflow-x-scroll aplica desbordamiento en el eje x, añadiendo una barra de scroll. -->
+    <div class="container overflow-x-scroll pt-5">
+      <div class="row">
+        <!-- d-flex aplica flexbox. flex-nowrap evita que los elementos cambien de fila. -->
+        <div class="col d-flex flex-nowrap">
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 1 A</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 1 B</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 1 C</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 1 D</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 1 E</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 1 F</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 1 G</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 1 H</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 1 I</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 1 J</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 1 K</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 1 L</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 1 M</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 1 N</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 1 Ñ</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 1 O</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 1 P</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 1 Q</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 1 R</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 1 S</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 1 T</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col d-flex flex-nowrap">
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 2 A</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 2 B</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 2 C</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 2 D</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 2 E</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 2 F</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 2 G</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 2 H</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 2 I</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 2 J</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 2 K</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 2 L</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 2 M</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 2 N</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 2 Ñ</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 2 O</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 2 P</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 2 Q</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 2 R</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 2 S</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 2 T</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col d-flex flex-nowrap">
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 3 A</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 3 B</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 3 C</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 3 D</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 3 E</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 3 F</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 3 G</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 3 H</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 3 I</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 3 J</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 3 K</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 3 L</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 3 M</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 3 N</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 3 Ñ</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 3 O</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 3 P</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 3 Q</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 3 R</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 3 S</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 3 T</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col d-flex flex-nowrap">
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 4 A</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 4 B</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 4 C</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 4 D</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 4 E</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 4 F</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 4 G</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 4 H</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 4 I</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 4 J</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 4 K</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 4 L</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 4 M</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 4 N</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 4 Ñ</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 4 O</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 4 P</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 4 Q</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 4 R</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 4 S</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 4 T</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col d-flex flex-nowrap">
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 5 A</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 5 B</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 5 C</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 5 D</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 5 E</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 5 F</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 5 G</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 5 H</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 5 I</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 5 J</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 5 K</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 5 L</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 5 M</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 5 N</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 5 Ñ</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 5 O</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 5 P</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 5 Q</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 5 R</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 5 S</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 5 T</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col d-flex flex-nowrap">
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 6 A</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 6 B</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 6 C</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 6 D</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 6 E</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 6 F</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 6 G</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 6 H</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 6 I</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 6 J</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 6 K</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 6 L</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 6 M</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 6 N</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled>Fila 6 Ñ</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 6 O</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 6 P</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 6 Q</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 6 R</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 6 S</button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Fila 6 T</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Compruebe su elección</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>Película:</h5>
+        <p>¿Quién es Quién?</p>
+        <h5>Sesión:</h5>
+        <p>16:00</p>
+        <h5>Asiento:</h5>
+        <p>Fila 1 A</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <a href="pago.html" class="btn btn-info" role="button">Comprar entrada</a>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Footer -->
     <footer>
       <div class="container">
         <div class="row mt-5">
           <div class="col-lg-4">
-            <h3>Enlaces</h3>
+            <h4>Enlaces</h4>
             <ul>
               <li><a href="peliculas.html">Películas</a></li>
               <!-- Usando el id del elemento, accede a su altura en la página -->
@@ -79,13 +278,13 @@
           </div>
 
           <div class="col-lg-4">
-            <h3>Contacto</h3>
+            <h4>Contacto</h4>
             <p>Correo electrónico: contacto@cineloscalifas.com</p>
             <p>Dirección: C/Goya s/n. Teléfono: 957112233</p>
           </div>
 
           <div class="col-lg-4">
-            <h3>Cine Los Califas S.L</h3>
+            <h4>Cine Los Califas S.L</h4>
             <p>(c) 2023 Cine Los Califas. Todos los derechos reservados.</p>
           </div>
         </div>
