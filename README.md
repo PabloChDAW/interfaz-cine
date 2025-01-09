@@ -22,9 +22,9 @@
   ### 3. Diseño de las 5 páginas
    - Página principal
    - Página películas
-   - (TODO) Página película
-   - (TODO) Página selección de asientos
-   - (TODO) Página pago
+   - Página película
+   - Página selección de asientos
+   - Página pago
   ### 4. (TODO) Integración de SASS
   ### 5. (TODO) Subir web a Netlify
   ### 6. (TODO) Crear el PDF
