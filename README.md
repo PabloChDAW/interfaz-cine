@@ -25,7 +25,11 @@
    - Página película
    - Página selección de asientos
    - Página pago
-   4. (TODO) Integración de SASS
+   4. Integración de SASS
+   - Importar el archivo styles.scss desde main.js
+   - Importar el archivo bootstrap.scss desde styles.scss
+   - Utilizar el compilador de SASS para generar el archivo styles.css.
+   - Aplicar styles.css al head de cada html.  Contiene todo el css asociado a cada clase de Bootstrap.
    5. (TODO) Subir web a Netlify
    6. (TODO) Crear el PDF
    7. (TODO) Preparar presentación
