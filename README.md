@@ -32,8 +32,8 @@
    - Aplicar styles.css al head de cada html.  Contiene todo el css asociado a cada clase de Bootstrap.
    - Por último, añadir el cdn de Bootstrap en un script al final del body para que el JS asociado a los componentes de Bootstrap funcione una vez desplegada la web.
    5. Subir web a Netlify
-   6. (TODO) Crear el PDF
-   7. (TODO) Preparar presentación
+   6. Crear el PDF
+   7. Preparar presentación
 
 Enlaces importantes:
 [Instalación de Bootstrap](https://getbootstrap.esdocu.com/docs/5.3/getting-started/)
